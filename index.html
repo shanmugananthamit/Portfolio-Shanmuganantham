@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -202,4 +202,667 @@
   </script>
 
 </body>
-</html>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shanmugamPortfolio</title>
+    <!--<link rel="stylesheet" href="./main .css">-->
+    <style type="text/css" media="all">* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.out {
+    height: 100vh;
+    background-color: black;
+    /* background:linear-gradient( to top ,cyan , black); */
+    /* background:linear-gradient( to top , black, cyan); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    height: 80vh;
+    width: 90vw;
+    background-color: rgba(255, 255, 255, .1);
+    overflow-x: hidden;
+/* background-color:grey; */
+    white-space: nowrap;
+    /* border: 1px solid rgb(245, 221, 2); */
+}
+
+.inner::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    margin-top: 10vh;
+    height: 70vh;
+    /* flex-wrap: wrap; */
+    /* width: 90vw; */
+    /* border: 1px dotted seagreen; */
+    /* background-color: aliceblue; */
+}
+
+.cont {
+    height: 70vh;
+    width: 90vw;
+    white-space: wrap;
+
+    display: inline-block;
+    /* border: 1px solid rgb(236, 156, 8); */
+    scroll-snap-align: start;
+    vertical-align: middle;
+    color: blanchedalmond;
+    /* background-color: darkolivegreen; */
+}
+
+.inner>nav {
+    height: 10vh;
+    width: 90vw;
+    background-color: rgb(58, 49, 49);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    /* border: 1px solid rgb(241, 7, 46); */
+    z-index: 1;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 7px;
+    word-spacing: 11px;
+    color: aqua;
+}
+
+.list {
+    text-transform: capitalize;
+    font-size: medium;
+    font-weight: bold;
+    word-spacing: 27px;
+    color: aquamarine;
+}
+
+.list >a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+/* .act { background-color: aqua;
+    color: red;} */
+.list >a.act { padding-bottom: 3px;
+        border-bottom: 3px dotted goldenrod;
+        color: gray;
+     } 
+
+#home>div {
+    /* height: 80vh; */
+    /* width: 90vw; */
+    /* height:80%; */
+    /* background-color: blue; */
+    /* position: relative; */
+
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(216, 8, 43);
+
+}
+
+.hleft {
+    /* width: 60vw;  */
+    /* height: 80vh; */
+    flex-basis: 65%;
+    /* white-space: wrap; */
+
+    /* background-color: blueviolet; */
+    border: 1px solid wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 4%;
+    color: white;
+    line-height: 35px;
+}
+
+.hleft>h1 {
+    margin-top: 10%;
+    text-transform: capitalize;
+    text-indent: 10px;
+    letter-spacing: 3px;
+    line-height: 55px;
+}
+
+.hleft>h1>span {
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: cyan;
+    letter-spacing: 7px;
+    word-spacing: 11px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.hleft>h3 {
+    line-height: 75px;
+    text-transform: capitalize;
+    text-indent: 77px;
+}
+
+.hleft>h3>span {
+    padding-left: 37px;
+    font-size: 27px;
+    color: crimson;
+}
+
+.hleft>p {
+    text-indent: 37px;
+    font-size: 21px;
+    line-height: 60px;
+}
+
+.hrig {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid wheat;
+}
+
+.hrig>img {
+    height: 250px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 3px 10px aqua;
+}
+
+#about>div {height:70vh ;
+    border: 2px solid green;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    /* align-items: center; */
+}
+
+.alef {
+    flex-basis: 40%;
+
+    border: 1px solid pink;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+.alef>h1{
+text-transform:uppercase;
+padding: 7px;
+}
+.alefinner{
+    position: relative;
+    left: 20%;
+    top: 7px;
+    height: 350px;
+width: 300px;
+background-color: black;
+/* border: 1px solid wheat; */
+box-shadow: 2px 2px 5px 2px blue;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+border-radius: 30px;
+}
+.alefinner>img{
+    margin-top: px;
+    height: 100px;
+    width: 100px;
+    padding: 2px;
+    border: 2px groove gold;
+    border-radius: 50%;
+    box-shadow: 2px 2px 7px 2px gold;
+}
+.alefinner>h1{
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 7px;
+    color: deeppink;
+}
+.alefinner>h3{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 7px;
+
+}
+.alefinner>h4{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 7px;
+    color: aqua;
+}
+.alefinner>#p1{
+    text-transform:capitalize;
+    margin-top: 7px;
+}
+.alefinner>h6{
+    text-transform: uppercase;
+    margin-top: 7px;
+    font-size: 17px;
+}
+.alefinner>#p2{
+    text-indent: 22px;
+    margin-top: 3px;
+    text-align: justify;
+
+}
+.arig {
+    flex-basis: 55%;
+    border: 1px solid red;
+    padding-left: 27px;
+    padding-right: 27px;
+/* margin-left: 27px; */
+
+    /* display: flex; */
+    /* gap: 20px; */
+}
+.arig>#artit>h4{
+        display:inline-block;
+    margin-top: 27px;
+        margin-left: 27px;
+        margin-bottom: 27px;
+        /* color: aqua; */
+        text-transform: uppercase;
+        cursor: pointer;
+            /* border: 1px solid blue; */
+}
+#content{
+    /* height: 100px; */
+    /* width: 30vw; */
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid rgb(18, 32, 77);
+    border-radius: 10%;
+    box-shadow: 2px 2px 5px 2px aquamarine;
+    padding-block: 20px;
+    padding-left: 37px;
+    list-style: circle;
+    color: rgb(218, 180, 235);
+    text-transform:capitalize;
+    /* font-size: 27px; */
+    letter-spacing: 3px;
+    font-family:'Times New Roman', Times, serif;
+}
+#content li{
+padding-top: 10px;
+text-transform: uppercase;
+    word-spacing: 7px;
+font-weight: bold;
+color: aqua;
+
+}
+.und{
+    border-bottom: 4px solid darkblue;
+    color: chartreuse;
+    /* padding-bottom: 7px; */
+    /* position: relative; */
+    /* background-color: aqua; */
+}
+#skill{ height: 70vh;
+    /* width: 100px; */
+    /* border: 1px solid red; */
+}
+#sout{
+    height: 100px;
+    /* width: 100px; */
+    /* border: 1px solid rgb(72, 182, 8); */
+    display: flex;
+    /* justify-content:center; */
+    justify-content: space-around;
+    gap: 30px;
+    padding-top: 30px;
+}
+.sklist{
+    height: 50px;
+    /* width: 100px; */
+    /* border: 1px solid pink; */
+    background-color: blueviolet;
+    padding: 10px 4px ;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+
+}
+
+#scon{
+    /* width: 200px; */
+    margin-top: 50px;
+    /* margin-left: 500px; */
+    /* border: 1px solid greenyellow; */
+    /* text-transform: capitalize; */
+    font-size: 30px;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+}
+#scon::-webkit-scrollbar {
+    display:none;
+}
+#scon>marquee{
+    border: 3px solid antiquewhite;
+    padding: 21px;
+    border-radius: 21px;
+}
+#scon>marquee> marker{
+    color: rgb(255, 251, 0);
+    font-size: 36px;
+    font-weight: bolder;
+    font-style:italic ;
+    
+}
+#scon div {
+    margin: 27px;
+    height: 150px;
+    width: 150px;
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    flex-shrink: 0;
+}
+
+#scon>div>img{
+    height: 100px;
+    width: 100px;
+}
+
+.d1{
+    background-color: rgb(255, 0, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    padding: 11px;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    word-spacing: 7px;
+}
+#scon>div:hover{
+    border: 0;
+}
+#scon>div>img:hover{
+    padding:17px;
+    transform: scale(2.5);
+    
+}
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="out">
+
+        <div class="inner">
+
+            <nav>
+                <div class="logo">
+                    <h2>shanmuganantam n</h2>
+                </div>
+                <div class="list">
+                    <a class="act" href="#home" title="">home</a>
+                    <a href="#about">about</a>
+                    <a href="#skill">skill</a>
+                    <a href="#project">project</a>
+                    <a href="#contact">contact</a>
+                </div>
+            </nav>
+            <div class="container">
+                <main id="home" class="cont">
+                    <div>
+                        <aside class="hleft">
+                            <h1>hello, i am <span>shanmuganantham n</span></h1>
+                            <h3>aspiring <span>full stack web developer</span></h3>
+                            <p>Welcome to my portfolio. I'm passionate about building responsive and user-friendly
+                                websites using modern technologies.<br>
+                                Explore my work, skills, and journey as I continue to grow in the tech world.
+                            </p>
+                        </aside>
+                        <aside class="hrig">
+                            <img src="./image/img.jpeg" alt="can't load">
+                        </aside>
+                    </div>
+                </main>
+
+                <main id="about" class="cont">
+                    <div>
+                        <div class="alef">
+                            <h1>about me</h1>
+                            <div class="alefinner">
+                                <img src="./image/img.jpeg" alt="connot load">
+                                <h1>shanmuganantam n</h1>
+                                <h3>b. tech in information technology </h3>
+                                <h4>developer</h4>
+                                <p id="p1">tamil nadu, ranipet</p>
+                                <h6>objective</h6>
+                                <p id="p2">To leverage the technical skills gained during my B.Tech in IT to contribute
+                                    to the organization problem solving capabilities and be a part of our company’s
+                                    success and development.</p>
+                            </div>
+                        </div>
+                        <div class="arig">
+                            <div id="artit">
+                                <h4 id="edu" class="und">education</h4>
+                                <h4 id="ext">extra curricular activities</h4>
+                            </div>
+                            <div id="content"><p> <ul><li> Bachelor of Technology (B.Tech) in Information Technology</li>
+Sri Balaji Chockalingam Engineering College, Arni <br> 
+CGPA: 7.85 – 2025 <br>
+<li>Diploma in Mechanical Engineering </li>
+Dr. M.G.R. Polytechnic College, Arni <br>
+93% <br> 
+<li>Higher Secondary Certificate (HSC)</li>
+Sri Ramakrishna BHEL Hr. Sec. School, BHEL <br> 
+64.75%  <br>
+<li>Secondary School Leaving Certificate (SSLC)</li>
+St. Joseph Matriculation Hr. Sec. School, Veppur <br>
+78.4% </u></p>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <main id="skill" class="cont">
+                    <div id="sout">
+                        <div class="sklist" id="tec"><h3>technical skills</h3></div>
+                    <div class="sklist" id="sof"><h3>soft skills</h3></div></div>
+                    <div id="scon">
+                        <marquee behavior="" direction="">
+Please select either <marker> technical skills </marker>or <marker> soft skills </marker> from the above.</marquee>
+                        <!-- <div><img src="./image/html1.jpg" alt=""></div>
+                        <div><img src="./image/css1.jpg" alt=""></div>
+                        <div><img src="./image/js1.png" alt=""></div>
+                        <div><img src="./image/java1.jpg" alt=""></div> -->
+                        <!-- <ul>
+                                    <li>html</li>
+                                    <li>css</li>
+                                    <li>javascript</li>
+                                    <li>react js</li>
+                                    <li>java</li>
+                                    <li>jdbc</li>
+                                    <li>hibernate</li>
+                                    <li>sql</li>
+                                </ul> -->
+                            </div>
+                 
+                </main>
+
+                <main id="project" class="cont">
+                    <h1> hi i am project</h1>
+                    
+                </main>
+
+                <main id="contact" class="cont">
+                    <h1> hi i am contact</h1>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    
+<script>
+        // ======nav list=======
+        // let list=document.querySelectorAll(`.list>a`)
+        // // console.log(list);
+        // // console.log(list[0]);
+        // list[0].addEventListener(`click`,()=>{
+        //     list[0].classList.add(`act`)
+        //     list[1].classList.remove(`act`)
+        //     list[2].classList.remove(`act`)
+        //     list[3].classList.remove(`act`)
+        //     list[4].classList.remove(`act`)
+        // })
+        //  list[1].addEventListener(`click`,()=>{
+        //     list[1].classList.add(`act`)
+        //     list[0].classList.remove(`act`)
+        //     list[2].classList.remove(`act`)
+        //     list[3].classList.remove(`act`)
+        //     list[4].classList.remove(`act`)
+        // })
+        //  list[2].addEventListener(`click`,()=>{
+        //     list[2].classList.add(`act`)
+        //     list[0].classList.remove(`act`)
+        //     list[1].classList.remove(`act`)
+        //     list[3].classList.remove(`act`)
+        //     list[4].classList.remove(`act`)
+        // })
+        //  list[3].addEventListener(`click`,()=>{
+        //     list[3].classList.add(`act`)
+        //     list[0].classList.remove(`act`)
+        //     list[1].classList.remove(`act`)
+        //     list[2].classList.remove(`act`)
+        //     list[4].classList.remove(`act`)
+        // }) 
+        // list[4].addEventListener(`click`,()=>{
+        //     list[4].classList.add(`act`)
+        //     list[0].classList.remove(`act`)
+        //     list[1].classList.remove(`act`)
+        //     list[2].classList.remove(`act`)
+        //     list[3].classList.remove(`act`)
+        // })
+        let list = document.querySelectorAll(".list>a");
+
+list.forEach((item) => {
+    item.addEventListener("click", () => {
+
+        // Remove .act from all
+        list.forEach(a => a.classList.remove("act"));
+
+        // Add .act to clicked one
+        item.classList.add("act");
+    });
+});
+ 
+        
+        // ========= about=========
+        // console.log('about');
+
+        let heading1 = document.getElementById("edu")
+        let heading2 = document.getElementById('ext')
+        let cont = document.getElementById('content')
+        // console.log(heading1);
+        // console.log(heading2);
+        // console.log(cont);
+
+        heading1.addEventListener("click", () => {
+            // console.log("click");
+            heading1.classList.add(`und`)
+            heading2.classList.remove(`und`)
+            cont.innerHTML = `<p> <ul><li> Bachelor of Technology (B.Tech) in Information Technology</li>
+Sri Balaji Chockalingam Engineering College, Arni <br> 
+CGPA: 7.85 – 2025 <br>
+<li>Diploma in Mechanical Engineering </li>
+Dr. M.G.R. Polytechnic College, Arni <br>
+93% <br> 
+<li>Higher Secondary Certificate (HSC)</li>
+Sri Ramakrishna BHEL Hr. Sec. School, BHEL <br> 
+64.75%  <br>
+<li>Secondary School Leaving Certificate (SSLC)</li>
+St. Joseph Matriculation Hr. Sec. School, Veppur <br>
+78.4% </u></p>`
+ })
+heading2.addEventListener("click", () => {
+    heading1.classList.remove(`und`)            
+    heading2.classList.add(`und`)
+    // console.log("click extra");
+    cont.innerHTML = `<ul>
+    <li>Function Organizer</li>
+    <li>Department Symposium Coordinator</li>
+    <li>Event Coordinator</li>
+    <li>Sports:<br>Basketball, Football </li>
+</ul>`
+ })
+
+//  ===tech===
+let tec=document.getElementById(`tec`)
+let sof=document.getElementById(`sof`)
+let scon=document.getElementById(`scon`)
+let div1=document.createElement(`div`)
+let mar= document.querySelector(`marquee`)
+
+console.log(tec);
+console.log(sof);
+console.log(scon);
+tec.addEventListener(`click`,()=>{
+    console.log(`hi1`);
+    // let div1=document.createElement(`div`)
+    div1.innerText=`technical skills`
+    tec.after(div1)
+    div1.classList.add(`d1`)
+    if (mar) {
+        mar.remove() 
+    }
+    scon.innerHTML=`<div><img src="./image/html1.jpg" alt="html" title="html"><h6>HTML</h6>  </div>
+                    <div><img src="./image/css1.jpg" alt="css" title="css"><h6>CSS</h6></div>
+                    <div><img src="./image/js1.png" alt="javaScript" title="javaScript"><h6>JAVASCRIPT</h6></div>
+                    <div><img src="./image/java1.jpg" alt="java" title="java"><h6>JAVA</h6></div>
+                    <div><img src="./image/react.png" alt="react" title="react" ><h6>REACT</h6></div>
+                    <div><img src="./image/sql.png" alt="sql" title="sql"><h6>SQL</h6></div> 
+                    <div><img src="./image/jdbc.webp" alt="jdbc" title="jdbc"><h6>JDBC</h6></div>
+                  <div><img src="./image/hibernate.webp" alt="hibernate" title="hibernate"><h6>HIBERNATE</h6></div> `
+})
+sof.addEventListener(`click`,()=>{
+    console.log(`hi2`);
+   div1.innerText=`soft skills`
+    sof.before(div1)
+        div1.classList.add(`d1`)
+
+if (mar) {
+        mar.remove() 
+    }    
+    // console.log(`h111`);
+    // scon.classList.add(img1)
+    scon.innerHTML=`<div><img src="./image/teamWork.webp" alt="Teamwork" title="Teamwork"><h6>TEAMWORK</h6></div>
+                    <div><img src="./image/pSolve.webp" alt="Problem Solving" title="Problem Solving"><h6>PROBLEM SOLVING</h6></div>
+                    <div><img src="./image/adapt.webp" alt="Adaptability" title="Adaptability"><h6>ADAPTABILITY</h6></div>
+                    <div><img src="./image/lead.webp" alt="Leadership" title="Leadership"><h6>LEADERSHIP</h6></div>
+                    <div><img src="./image/creative.webp" alt="Creativity" title="Creativity"><h6>CREATIVITY</h6></div> `
+})
+//project   
+      
+
+
+    </script>
+</body>
+</html6
