@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shanmugamPortfolio</title>
     <!--<link rel="stylesheet" href="./main .css">-->
-    <style type="text/css" media="all">* {
+    <style type="text/css" media="all">
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* body{  
+    /* height: 80vh; */
+    /* width: 80vw; */
+  /*  background-color: aqua;
+    overflow: hidden;
+    position: fixed;
 
+}*/
 .out {
     height: 100vh;
+    width: 100vw;
     background-color: black;
     /* background:linear-gradient( to top ,cyan , black); */
     /* background:linear-gradient( to top , black, cyan); */
@@ -106,7 +115,9 @@
 
     display: flex;
     justify-content: space-between;
-    border: 1px solid rgb(216, 8, 43);
+
+
+    /* border: 1px solid rgb(216, 8, 43); */
 
 }
 
@@ -117,7 +128,9 @@
     /* white-space: wrap; */
 
     /* background-color: blueviolet; */
-    border: 1px solid wheat;
+
+
+    /* border: 1px solid wheat; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -138,11 +151,15 @@
 .hleft>h1>span {
     font-weight: bolder;
     text-transform: uppercase;
-    color: cyan;
+    /* color: cyan; */
+    color: rgb(251, 255, 0);
     letter-spacing: 7px;
     word-spacing: 11px;
     margin-left: 20px;
     font-size: 30px;
+}
+.hleft>h1>span:hover{
+    color: chartreuse;
 }
 
 .hleft>h3 {
@@ -154,7 +171,7 @@
 .hleft>h3>span {
     padding-left: 37px;
     font-size: 27px;
-    color: crimson;
+    color: rgb(163, 20, 220);
 }
 
 .hleft>p {
@@ -168,7 +185,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid wheat;
+
+
+    /* border: 1px solid wheat; */
 }
 
 .hrig>img {
@@ -180,7 +199,7 @@
 }
 
 #about>div {height:70vh ;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     justify-content: space-around;
     color: white;
@@ -189,13 +208,6 @@
 
 .alef {
     flex-basis: 40%;
-
-    border: 1px solid pink;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* align-content: center; */
 }
 .alef>h1{
 text-transform:uppercase;
@@ -208,7 +220,7 @@ padding: 7px;
     height: 350px;
 width: 300px;
 background-color: black;
-/* border: 1px solid wheat; */
+border: 1px dashed rgb(42, 166, 238);
 box-shadow: 2px 2px 5px 2px blue;
 display: flex;
 flex-direction: column;
@@ -262,7 +274,7 @@ border-radius: 30px;
 }
 .arig {
     flex-basis: 55%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding-left: 27px;
     padding-right: 27px;
 /* margin-left: 27px; */
@@ -287,7 +299,7 @@ border-radius: 30px;
     border: 3px solid rgb(18, 32, 77);
     border-radius: 10%;
     box-shadow: 2px 2px 5px 2px aquamarine;
-    padding-block: 20px;
+    padding-block: 20px;    
     padding-left: 37px;
     list-style: circle;
     color: rgb(218, 180, 235);
@@ -337,13 +349,8 @@ color: aqua;
 }
 
 #scon{
-    /* width: 200px; */
     margin-top: 50px;
-    /* margin-left: 500px; */
-    /* border: 1px solid greenyellow; */
-    /* text-transform: capitalize; */
     font-size: 30px;
-    /* background-color: aqua; */
     display: flex;
     gap: 30px;
     overflow-x: auto;
@@ -400,135 +407,147 @@ color: aqua;
     transform: scale(2.5);
     
 }
-/* =======================
-   MOBILE VIEW (Navbar Bottom)
-   ======================= */
-@media (max-width: 768px) {
 
-    .inner {
-        height: 100vh;
-    }
 
-    /* Move navbar to bottom */
-    .inner > nav {
-        position: fixed;
-        bottom: 0;
-        top: auto;
-        left: 0;
-        height: 60px;
-        width: 100%;
-        background-color: #111;
-        border-top: 2px solid cyan;
-        justify-content: space-evenly;
-        z-index: 1000;
-    }
+/* bottom menu  */
+#botmen{
+    height: 40px;
+    width: 80px;
+    
+    border-radius: 50%;
+    color: aquamarine;
+    background-color: chartreuse;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#lis1{
+    height: 155px;
+    width: 75px;
+    background-color: rgb(58, 49, 49);
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    bottom: 75px;
+    right: 35px;
+    justify-content: center;
+    align-items: left;
+    border-radius: 17px;
+    padding-left: 7px;
+    text-transform: capitalize;
+    font-size: medium;
+        font-weight: bold;
+}
+#lis1>a{
+    text-decoration: none;
+    padding: 7px;
+    color: antiquewhite;
+}
+/* phone view   home */
 
-    /* Hide logo on mobile */
-    .logo {
+@media  (max-width:850px){
+.inner{
+border-radius: 17px;
+     }
+.inner>nav {
         display: none;
-    }
-
-    /* Nav links mobile style */
-    .list {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        word-spacing: normal;
-        font-size: 14px;
-    }
-
-    .list > a {
-        padding: 6px 8px;
-        font-size: 13px;
-    }
-
-    /* Active link style (mobile) */
-    .list > a.act {
-        border-bottom: none;
-        border-top: 3px solid gold;
-        color: cyan;
-    }
-
-    /* Add space so content not hidden behind navbar */
-    .container {
-        margin-bottom: 70px;
-    }
-
-    /* Stack home section vertically */
-    #home > div {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hleft, .hrig {
-        flex-basis: 100%;
-        border: none;
-        text-align: center;
-    }
-
-    .hleft > h1 {
-        font-size: 22px;
-        line-height: 35px;
-    }
-
-    .hleft > h1 > span {
-        font-size: 20px;
-    }
-
-    .hrig > img {
-        height: 180px;
-        margin-top: 15px;
-    }
-
-    /* About section stack */
-    #about > div {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .alef, .arig {
-        flex-basis: 100%;
-    }
-
-    .alefinner {
-        left: 0;
-        margin: auto;
-    }
-
-    /* Skills cards smaller */
-  
-  /* ====== SKILLS SECTION MOBILE ====== */
-#skill {
-    height: auto; /* let it expand based on content */
-    padding: 20px 10px;
+    }   
+ #botmen{
+            display: flex;
+        }
+.container {
+    margin-top: 0vh;
+    border: 0px dotted seagreen;
+    border-radius: 17px;
 }
 
-#sout {
+#home >div {
+    border-radius: 17px;
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hleft {
+    width: 80vw; 
+    height: 80vh;
+    flex-basis: 0%;
+    color: white;
+    line-height: 25px;
+}
+.hleft>h1 {
+margin-top: 10%;
+text-indent: 25px;
+}
+.hleft>h1>span {
+    /* display: none; */
+    font-size: 55%;
+    /* display: inline; */
+    font-weight: lighter;
+    letter-spacing: normal;
+}
+.hleft>h3 {
+    line-height: 61px;
+    text-transform: capitalize;
+    text-indent: 55px;
+    font-size: large;
+    font-weight: normal;
+
+        
+    }
+
+.hrig {
+    height: 250px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(0, 162, 255);
+    padding: 31px;
+    margin: 30px;
+}
+#about>div {
+    flex-direction: column;
+}
+
+.alef{
+    /* width: 10vw; */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 17px;
+}
+.alefinner{
+    position: static;
+    margin: 11px;
+    height: 100%;
+    width: 100%;
+}
+.arig{
+padding: 17px;
+/* background-color:rgba(138, 138, 138, 0.705) ; */
+}
+#sout{
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    /* border: 3px solid pink; */
 }
-
-.sklist {
-    width: 80%;
-    text-align: center;
-    font-size: 16px;
-    padding: 8px 0;
-    border-radius: 10px;
+#scon{ 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;   
 }
-
-#scon {
-    margin-top: 20px;
-    flex-wrap: nowrap;
-    overflow-x: au
-
 }
-
-      
     </style>
 </head>
-
 <body>
     <div class="out">
 
@@ -572,7 +591,7 @@ color: aqua;
                                 <h1>shanmuganantam n</h1>
                                 <h3>b. tech in information technology </h3>
                                 <h4>developer</h4>
-                                <p id="p1">tamil nadu, ranipet</p>
+                                <p id="p1">ranipet, tamil nadu, india </p>
                                 <h6>objective</h6>
                                 <p id="p2">To leverage the technical skills gained during my B.Tech in IT to contribute
                                     to the organization problem solving capabilities and be a part of our company’s
@@ -629,7 +648,7 @@ Please select either <marker> technical skills </marker>or <marker> soft skills 
 
                 <main id="project" class="cont">
                     <!-- <h1> hi i am project</h1> -->
-                   <h2>project titles </h2><br>
+                     <h2>project titles </h2><br>
                      <p>
                      Digital Clock <br>
                      Tic-Tac-Toe Game <br>
@@ -642,57 +661,19 @@ Please select either <marker> technical skills </marker>or <marker> soft skills 
 
                 <main id="contact" class="cont">
                     <!-- <h1> hi i am contact</h1> -->
-                   <h1>contact details</h1>
+                     <h1>contact details</h1>
                      <p><h3>phone number </h3> 9360928372 <br>
-                    <h3>email</h3> shanmugananthamitle@gmail.com
+                    <h3>email</h3> shanmugananthamitle@gmaqil.com
                     </p>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=shanmugananthamitle@gmail.com" target="_blank">click it to send mail to contact</a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=name@gmail.com" target="_blank">click it to send mail to contact</a>
                 </main>
             </div>
         </div>
     </div>
-
+<div id="botmen"><h1>☰</h1></div>
     
 <script>
-        // ======nav list=======
-        // let list=document.querySelectorAll(`.list>a`)
-        // // console.log(list);
-        // // console.log(list[0]);
-        // list[0].addEventListener(`click`,()=>{
-        //     list[0].classList.add(`act`)
-        //     list[1].classList.remove(`act`)
-        //     list[2].classList.remove(`act`)
-        //     list[3].classList.remove(`act`)
-        //     list[4].classList.remove(`act`)
-        // })
-        //  list[1].addEventListener(`click`,()=>{
-        //     list[1].classList.add(`act`)
-        //     list[0].classList.remove(`act`)
-        //     list[2].classList.remove(`act`)
-        //     list[3].classList.remove(`act`)
-        //     list[4].classList.remove(`act`)
-        // })
-        //  list[2].addEventListener(`click`,()=>{
-        //     list[2].classList.add(`act`)
-        //     list[0].classList.remove(`act`)
-        //     list[1].classList.remove(`act`)
-        //     list[3].classList.remove(`act`)
-        //     list[4].classList.remove(`act`)
-        // })
-        //  list[3].addEventListener(`click`,()=>{
-        //     list[3].classList.add(`act`)
-        //     list[0].classList.remove(`act`)
-        //     list[1].classList.remove(`act`)
-        //     list[2].classList.remove(`act`)
-        //     list[4].classList.remove(`act`)
-        // }) 
-        // list[4].addEventListener(`click`,()=>{
-        //     list[4].classList.add(`act`)
-        //     list[0].classList.remove(`act`)
-        //     list[1].classList.remove(`act`)
-        //     list[2].classList.remove(`act`)
-        //     list[3].classList.remove(`act`)
-        // })
+       
         let list = document.querySelectorAll(".list>a");
 
 list.forEach((item) => {
@@ -708,15 +689,9 @@ list.forEach((item) => {
  
         
         // ========= about=========
-        // console.log('about');
-
         let heading1 = document.getElementById("edu")
         let heading2 = document.getElementById('ext')
         let cont = document.getElementById('content')
-        // console.log(heading1);
-        // console.log(heading2);
-        // console.log(cont);
-
         heading1.addEventListener("click", () => {
             // console.log("click");
             heading1.classList.add(`und`)
@@ -745,23 +720,19 @@ heading2.addEventListener("click", () => {
     <li>Sports:<br>Basketball, Football </li>
 </ul>`
  })
-
 //  ===tech===
 let tec=document.getElementById(`tec`)
 let sof=document.getElementById(`sof`)
 let scon=document.getElementById(`scon`)
 let div1=document.createElement(`div`)
 let mar= document.querySelector(`marquee`)
-
-console.log(tec);
-console.log(sof);
-console.log(scon);
 tec.addEventListener(`click`,()=>{
-    console.log(`hi1`);
     // let div1=document.createElement(`div`)
     div1.innerText=`technical skills`
-    tec.after(div1)
+    if(window.innerWidth<=850)    tec.before(div1)
+ else tec.after(div1)
     div1.classList.add(`d1`)
+    
     if (mar) {
         mar.remove() 
     }
@@ -770,18 +741,17 @@ tec.addEventListener(`click`,()=>{
                     <div><img src="./image/js1.png" alt="javaScript" title="javaScript"><h6>JAVASCRIPT</h6></div>
                     <div><img src="./image/java1.jpg" alt="java" title="java"><h6>JAVA</h6></div>
                     <div><img src="./image/jdbc.webp" alt="jdbc" title="jdbc"><h6>JDBC</h6></div>
-                  <div><img src="./image/hibernate.webp" alt="hibernate" title="hibernate"><h6>HIBERNATE</h6></div> 
-                  <div><img src="./image/springBoot.webp" alt="springBoot" title="spring boot"><h6>SPRING BOOT</h6></div> 
+                    <div><img src="./image/hibernate.webp" alt="hibernate" title="hibernate"><h6>HIBERNATE</h6></div> 
+                    <div><img src="./image/springBoot.webp" alt="springBoot" title="spring boot"><h6>SPRING BOOT</h6></div> 
                     <div><img src="./image/sql.png" alt="sql" title="sql"><h6>SQL</h6></div> 
                     <div><img src="./image/react.png" alt="react" title="react" ><h6>REACT</h6></div>`
-
 })
 sof.addEventListener(`click`,()=>{
     console.log(`hi2`);
    div1.innerText=`soft skills`
-    sof.before(div1)
+   if(window.innerWidth<=850)    tec.before(div1)
+   else  sof.before(div1)
         div1.classList.add(`d1`)
-
 if (mar) {
         mar.remove() 
     }    
@@ -794,9 +764,30 @@ if (mar) {
                     <div><img src="./image/creative.webp" alt="Creativity" title="Creativity"><h6>CREATIVITY</h6></div> `
 })
 //project   
-      
-
-
-    </script>
+//phone view secript for nav bar
+let men=document.getElementById(`botmen`)
+let list1=document.createElement(`div`)
+list1.setAttribute(`id`,`lis1`)
+list1.innerHTML=`<a class="act" href="#home" title="">home</a>
+                    <a href="#about">about</a>
+                    <a href="#skill">skill</a>
+                    <a href="#project">project</a>
+                    <a href="#contact">contact</a>`
+var a=`1`
+ let s1=men.addEventListener('click',()=>{
+  if(a==1){
+    men.after(list1)
+men.style.backgroundColor='lightGreen'
+men.style.color='red'
+men.innerHTML=`<h1>✖</h1>`
+a=`2`
+  }else if(a==2){
+    list1.remove()
+    men.innerHTML=`<h1>☰</h1>`
+men.style.backgroundColor='coral'
+a=`1`
+  } 
+})
+</script>
 </body>
 </html6
